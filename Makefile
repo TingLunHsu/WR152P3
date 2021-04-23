@@ -7,4 +7,4 @@ run:
 	java ChatBot
 
 clean:
-	rm *.class
+	-rm *.class
