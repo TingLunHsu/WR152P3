@@ -1,4 +1,4 @@
 
-Undergraduate CS programs are dominated by White and Asian male students. A National Center for Education Statistics report shows that as of 2018, only 8.9% and 10.1% of CS degrees conferred are for Black and Hispanic students. The disproportion of demographics in CS undergraduates also reflects in the job market. In the category of “Computer and mathematical occupations” for U.S. Bureau of Labor Statistics as of 2021, only 9.1% are Black/African, and 8.4% are Hispanic/Latino. As to the female-male ratio, only around one-fourth are females.
+Undergraduate CS programs are dominated by White and Asian male students. A National Center for Education Statistics report shows that as of 2018, only 8.9% and 10.1% of CS degrees conferred are for Black and Hispanic students. As to the female-male ratio, only around one-fourth are females. The disproportion of demographics in CS undergraduates also reflects in the job market.
 
-Note: underrepresented students are defined as either non-White, non-Asian, or non-male.
+Note: underrepresented students are defined as either non-White, non-Asian, or non-male in the following texts.
