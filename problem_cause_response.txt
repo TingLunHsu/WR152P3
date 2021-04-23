@@ -1,0 +1,5 @@
+
+Available options:
+(1) Got it, what can I do to help?
+(2) Ok, then why does this issue matter?
+(3) I simply disagree with this.

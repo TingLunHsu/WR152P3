@@ -1,0 +1,5 @@
+
+Available options:
+(1) Got it, what can I do to help?
+(2) Ok, I am curious what's the cause?
+(3) I simply disagree with this.
