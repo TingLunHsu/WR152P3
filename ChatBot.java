@@ -1,9 +1,6 @@
 import java.util.*;
 import java.io.*;
 
-/*
- * A blackjack game
- */
 public class ChatBot {  
 	public static final String ERROR = "error.txt";
 
