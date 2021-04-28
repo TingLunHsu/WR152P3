@@ -1,4 +1,0 @@
-
-Available options:
-(1) Tell me more about this.
-(2) I will come back later.

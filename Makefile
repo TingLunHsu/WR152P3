@@ -1,10 +1,10 @@
 all: clean build run
 
 build:
-	javac *.java
+	javac Main.java
 
 run:
-	java ChatBot
+	java Main
 
 clean:
 	-rm *.class
