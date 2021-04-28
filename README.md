@@ -12,4 +12,4 @@ $ java ChatBot
 2. Select all the <a href="https://raw.githubusercontent.com/TingLunHsu/WR152P3/main/Main.java" target="_blank"> content </a> ("Ctrl+A" for Windows, "command+A" for Mac) in this page and paste it to page you just open.
 3. Click the green buttom "Run" on the top.
 
-![caption]("Downloads/WR152P3-demo-setup.gif")
+![caption](WR152P3-demo-setup.gif)
