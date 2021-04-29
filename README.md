@@ -2,8 +2,8 @@
 
 ## For those who know how to run java
 ```
-$ javac ChatBot.java
-$ java ChatBot
+$ javac Main.java
+$ java Main
 ```
 
 
