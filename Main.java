@@ -17,7 +17,8 @@ public class Main {
 	public static final String PROBLEM_MENU = 
 		"Available options:\n" + 
 		"(1) Why there are so few underrepresented students getting CS degrees?\n" + 
-		"(2) Could you tell me why this matters?";
+		"(2) Could you tell me why this matters?\n" +
+		"(3) I would like to hear an anecdote from the creator.";
 	public static final String PROBLEM_CAUSE = 
 		"The environment in the CS major is highly competitive and individualistic. This makes groups of students who value communal goals and social value or who like to work with others hard to relate and feel a sense of belonging. Moreover, most CS students are White/Asian males. It is naturally hard for other groups of students to find people from similar cultural and gender backgrounds to make connections and work together.";
 	public static final String PROBLEM_CAUSE_RESPONSE = 
@@ -32,6 +33,16 @@ public class Main {
 		"(1) Got it, what can I do to help?\n" + 
 		"(2) Ok, I am curious what's the cause?\n" +
 		"(3) I simply disagree with this.";
+
+	public static final String ANECDOTE = 
+		"Hi everyone! I am Ting, the creator of this program.\n\n" + 
+		"In fall 2020, when I applied for internships for the summer of 2021, I heard some of my friends talked about candidates who are categorized as racial/gender minority will get a boost when applying for big tech like Facebook. Out of curiosity, I went check FB's official diversity report, and I found that only 1.7% of technical roles in FB were Black and 4.3% for Hispanic. Suddenly I felt FB was so fake. FB bans a whole bunch of conservative pages and posts, promotes BLM, and tries to support diversity. While the fact is that it barely hires any Black candidates.\n\n" + 
+		"Ok, after the anger, I came back to think about my school's demographics for CS major. I did see lots of White and Asian students. While female students are relatively few, especially in higher-level CS courses, but I do remember them in lecture halls. However, I could not remember I saw any Black students in my higher-level courses and I did see a few when I took intro CS courses.\n\n" + 
+		"So, why there are so few underrepresented students majoring in CS in the beginning, and for those who do, why do they drop out later on?\n";
+	public static final String ANECDOTE_MENU = 
+		"Available options:\n" + 
+		"(1) I would like to know the reason.\n" +
+		"(2) Could you tell me why this matters?\n";
 
 	public static final String SOLUTION_MENU = 
 		"What can I help if I am a __\n" + 
@@ -75,7 +86,8 @@ public class Main {
 		"https://www.amazon.com/Talking-about-Leaving-Revisited-Undergraduate/dp/3030253031\n\n" + 
 		"Statistics:\n" + 
 		"https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm\n" + 
-		"https://www.bls.gov/cps/cpsaat11.htm\n\n" + 
+		"https://www.bls.gov/cps/cpsaat11.htm\n" + 
+		"https://diversity.fb.com/read-report/\n\n" +
 		"Thank you for visiting!";
 
 	/*
@@ -278,23 +290,23 @@ public class Main {
 	}
 
 	/*
-	 * Underrepresented students in CS major
+	 * Personal anecdote
 	 */
-	public static void problem() {
-		Main.print(PROBLEM_STATEMENT);
+	public static void anecdote() {
+		Main.print(ANECDOTE);
 
 		Scanner sc = new Scanner(System.in); 
 		String str;
 		int choice;
 
 		while (true) {
-			Main.print(PROBLEM_MENU);
+			Main.print(ANECDOTE_MENU);
 			str = sc.nextLine();
 
 			try {
 				choice = Integer.parseInt(str);
 
-				if (1 <= choice && choice <= 2) {
+				if (1 <= choice || choice <= 2) {
 					break;
 				}
 			} catch (NumberFormatException e) {
@@ -312,6 +324,47 @@ public class Main {
 			case 2:
 				Main.matter();
 				break;
+		}
+	}
+
+	/*
+	 * Underrepresented students in CS major
+	 */
+	public static void problem() {
+		Main.print(PROBLEM_STATEMENT);
+
+		Scanner sc = new Scanner(System.in); 
+		String str;
+		int choice;
+
+		while (true) {
+			Main.print(PROBLEM_MENU);
+			str = sc.nextLine();
+
+			try {
+				choice = Integer.parseInt(str);
+
+				if (1 <= choice && choice <= 3) {
+					break;
+				}
+			} catch (NumberFormatException e) {
+				;
+			}
+
+			Main.print(ERROR);
+		}
+
+		switch (choice) 
+		{
+			case 1:
+				Main.cause();
+				break;
+			case 2:
+				Main.matter();
+				break;
+			case 3:
+				Main.anecdote();
+				break; 
 			default:
 		}
 	}
